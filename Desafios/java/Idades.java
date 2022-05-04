@@ -13,14 +13,11 @@ public class  Desafio {
         int cont = 0;
         double soma = 0; 
         double n = 0;
-        //complete o codigo
-        while (n >= 0) {
-            n = leitor.nextInt();
-            if (n >= 0) { 
-                soma = soma + n;
-                cont++;
-            }
+        while ((n = leitor.nextInt()) > 0) {
+            cont++;
+            soma += n;
         }
         double media = soma / cont;
         System.out.println(String.format("%.2f", media));
+    }	
 }
